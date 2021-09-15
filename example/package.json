@@ -1,0 +1,16 @@
+{
+  "name": "browserstack-app-upload-js-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "browserstack-app-upload-js":"..",
+    "dotenv":"^10.0.0"
+  }
+}
