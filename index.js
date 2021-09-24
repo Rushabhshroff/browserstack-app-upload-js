@@ -1,7 +1,7 @@
-import fetch from 'node-fetch'
-import FormData from 'form-data'
-import fs from 'fs'
-import assert from 'assert'
+global.fetch = require('node-fetch')
+global.FormData = require('form-data')
+const fs = require('fs')
+const assert = require('assert')
 /**
  * Browserstack Creds
  * @param {{username?:string,accesskey?:string}} opts 
@@ -47,5 +47,5 @@ BrowserstackAppUpload.prototype.UploadApp = async function (opts) {
         }
     })
 }
-export default BrowserstackAppUpload
+module.exports = BrowserstackAppUpload
 
